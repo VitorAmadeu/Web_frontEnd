@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - ODS 4</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <h1>Administração de Usuários</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="objetivos">
+      <h3>Cadastrar Novo Usuário</h3>
+      <form id="user-form">
+        <div>
+          <label for="user-name">Nome do Usuário:</label>
+          <input type="text" id="user-name" required>
+        </div>
+        <div>
+          <label for="user-email">E-mail:</label>
+          <input type="email" id="user-email" required>
+        </div>
+        <br>
+        <button type="submit">Cadastrar</button>
+        <button type="button" id="clear-fields">Limpar Campos</button>
+      </form>
+    </section>
+
+    <section class="objetivos">
+      <h3>Usuários Cadastrados</h3>
+      <div>
+          <label for="search">Pesquisar:</label>
+          <input type="text" id="search" placeholder="Pesquisar por nome ou e-mail...">
+          <button type="button" id="delete-all">Excluir Todos</button>
+      </div>
+      <br>
+      <ul id="user-list">
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Desenvolvido por Vitor Amadeu</p>
+    <p><a href="CurriculuVitae\CurriculumVitae.html" target="_blank" style="color: aliceblue;">CurriculumVitae Vitor Amadeu</a></p>
+  </footer>
+
+  <script src="admin.js"></script>
+
+</body>
+</html>
